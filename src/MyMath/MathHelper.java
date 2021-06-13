@@ -15,7 +15,7 @@ public class MathHelper {
     
     public int AddIntNumber(String prompt) throws NumberFormatException
     {
-        String strNumber=InputHelper.GetInput("Enter integer number: ");
+        String strNumber=InputHelper.GetInput(prompt);
         int myInt=Integer.parseInt(strNumber);
         this.total=this.total+myInt;
         return myInt;
