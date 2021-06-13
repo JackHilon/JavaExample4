@@ -6,7 +6,7 @@ import java.lang.invoke.MethodHandles;
 public class JavaExample4 {
 
     public static void main(String[] args) {
-        MathHelper helper = new MathHelper();
+        MathHelper helper = new MathHelper(60);
 
         try {
             while (true) {
