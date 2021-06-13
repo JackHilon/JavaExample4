@@ -10,9 +10,9 @@ public class JavaExample4 {
 
         try {
             while (true) {
-                int number = helper.AddIntNumber("Enter your number: ");
+                int number = helper.GetMath("Enter your number: ",MathHelper.SUB);
                 int total = helper.GetTotal();
-
+                
                 String message = String.format("Entered: %d, total: %d", number, total); // %d is a place-holder
 
                 System.out.println(message);
