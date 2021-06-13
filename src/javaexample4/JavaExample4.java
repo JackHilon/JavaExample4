@@ -1,6 +1,7 @@
 package javaexample4;
 
 import MyMath.MathHelper;
+import MyMath.Operation;
 import java.lang.invoke.MethodHandles;
 
 public class JavaExample4 {
@@ -10,7 +11,7 @@ public class JavaExample4 {
 
         try {
             while (true) {
-                int number = helper.GetMath("Enter your number: ",MathHelper.SUB);
+                int number = helper.GetMath("Enter your number: ",Operation.ADD);
                 int total = helper.GetTotal();
                 
                 String message = String.format("Entered: %d, total: %d", number, total); // %d is a place-holder

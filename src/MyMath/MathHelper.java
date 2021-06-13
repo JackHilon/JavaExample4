@@ -39,5 +39,21 @@ public class MathHelper {
 
         return myInt;
     }
+    
+    public int GetMath(String prompt, Operation operation)
+            throws NumberFormatException {
+        String strNumber = InputHelper.GetInput(prompt);
+        int myInt = Integer.parseInt(strNumber);
+        switch (operation) {
+            case ADD:
+                this.total = this.total + myInt;
+                break;
+            case SUB:
+                this.total = this.total - myInt;
+                break;
+        }
+
+        return myInt;
+    }
 
 }
