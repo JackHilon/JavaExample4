@@ -55,5 +55,9 @@ public class MathHelper {
 
         return myInt;
     }
+    
+    public enum Operation {
+    ADD,SUB
+    }
 
 }
